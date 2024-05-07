@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '11.0'
+platform :ios, '12.0'
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
@@ -30,6 +30,11 @@ flutter_ios_podfile_setup
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
+
+  #Pods For Runner
+  #pod 'BoringSSL-GRPC', :path => '/Users/jogna/Documents/amj/gestion_depense/ios/boringssl'
+  pod 'BoringSSL-GRPC', :path => '/var/folders/2g/rxq8f_2x03d2jchfw2l7m4r40000gn/T/d20240507-66813-de2o6a'
+
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
   target 'RunnerTests' do
